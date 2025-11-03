@@ -5,7 +5,7 @@ import { bmiLabels } from '../resources/BmiLabels'
 struct Field {
   @Prop caption: Resource;
   @Prop unit: string;
-  onChange!: (string: string) => void;
+  onChange: (string: string) => void = () => {}
 
   build() {
     Row() {
